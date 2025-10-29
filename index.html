@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Achtout - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+    </div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="logo">
+            <div class="logo-circle">MA</div>
+            <h3>Mohamed Achtout</h3>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active" data-section="home">
+                <span class="icon">🏠</span>
+                <span class="text">Accueil</span>
+            </a></li>
+            <li><a href="#about" class="nav-link" data-section="about">
+                <span class="icon">👨‍💻</span>
+                <span class="text">À Propos</span>
+            </a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills">
+                <span class="icon">⚡</span>
+                <span class="text">Compétences</span>
+            </a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">
+                <span class="icon">🚀</span>
+                <span class="text">Projets</span>
+            </a></li>
+            <li><a href="#education" class="nav-link" data-section="education">
+                <span class="icon">🎓</span>
+                <span class="text">Formation</span>
+            </a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">
+                <span class="icon">📧</span>
+                <span class="text">Contact</span>
+            </a></li>
+        </ul>
+        <div class="social-links">
+            <a href="mailto:achtoutmohamed08@gmail.com" class="social-icon" title="Email">📮</a>
+            <a href="tel:+212664267126" class="social-icon" title="Téléphone">📱</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="greeting-badge">Bienvenue 👋</div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Bonjour, je suis</span>
+                        <span class="title-name">Mohamed Achtout</span>
+                    </h1>
+                    <p class="hero-subtitle">Étudiant Passionné en Informatique</p>
+                    <p class="hero-description">
+                        Développeur full-stack en formation, spécialisé dans la création d'applications web modernes 
+                        et innovantes. Trilingue et motivé par les défis technologiques.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                    </div>
+                </div>
+                <div class="hero-illustration">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-content">
+                            <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">'Mohamed Achtout'</span>,
+  <span class="code-property">location</span>: <span class="code-string">'Casablanca, Morocco'</span>,
+  <span class="code-property">languages</span>: [<span class="code-string">'Arabe'</span>, <span class="code-string">'Français'</span>, <span class="code-string">'Anglais'</span>],
+  <span class="code-property">skills</span>: [<span class="code-string">'React'</span>, <span class="code-string">'PHP'</span>, <span class="code-string">'SQL'</span>],
+  <span class="code-property">passion</span>: <span class="code-string">'Innovation Tech'</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2 class="section-title">À Propos de Moi</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-container">
+                <div class="about-card">
+                    <div class="about-image">
+                        <img src="me.png" alt="Mohamed Achtout" class="profile-photo">
+                        <div class="status-badge">✨ Disponible</div>
+                    </div>
+                    <div class="about-content">
+                        <h3>Étudiant en DUT Informatique</h3>
+                        <p class="about-description">
+                            Étudiant passionné en Informatique avec d'excellentes compétences analytiques et de 
+                            résolution de problèmes. Trilingue (Arabe, Français, Anglais) et motivé par l'innovation 
+                            technologique.
+                        </p>
+                       
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-icon">📍</span>
+                                <div>
+                                    <strong>Localisation</strong>
+                                    <p>Casablanca, Maroc</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">🌍</span>
+                                <div>
+                                    <strong>Langues</strong>
+                                    <p>Arabe, Français, Anglais</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">🎯</span>
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Bachelor EST Essaouira</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Compétences Techniques</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">💻</span>
+                        Langages & Technologies
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">C/C++</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">React</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">PHP</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">Java/Kotlin</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">Flask</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🗄️</span>
+                        Bases de Données
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">Oracle</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">PostgreSQL</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">MongoDB</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🔧</span>
+                        Outils & Systèmes
+                    </h3>
+                    <div class="tools-list">
+                        <span class="tool-badge">Ubuntu</span>
+                        <span class="tool-badge">Windows</span>
+                        <span class="tool-badge">BASH</span>
+                        <span class="tool-badge">SQL/PL-SQL</span>
+                        <span class="tool-badge">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Mes Projets</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-container">
+                <div class="project-card featured">
+                    <div class="project-badge">PFE - En cours</div>
+                    <div class="project-header">
+                        <h3>Research App</h3>
+                        <span class="project-date">Jan 2025 - Avr 2025</span>
+                    </div>
+                    <p class="project-description">
+                        Application web innovante de gestion de projets, spécialement conçue pour aider les 
+                        doctorants, étudiants de master et chercheurs à organiser et suivre leurs projets de 
+                        recherche de manière efficace et collaborative.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Gestion de Projets</span>
+                        <span class="tag">Collaboration</span>
+                        <span class="tag">Web App</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-status">🔄 En développement</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-badge">Stage</div>
+                    <div class="project-header">
+                        <h3>Application de Gestion de Stock</h3>
+                        <span class="project-date">Juil 2024 - Sep 2024</span>
+                    </div>
+                    <p class="project-description">
+                        Application web de gestion de stock développée avec React (frontend) et PHP/MySQL 
+                        (backend), permettant la gestion des produits, le suivi des mouvements de stock et 
+                        la génération de reçus.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-status">✅ Terminé</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-badge">Projet Personnel</div>
+                    <div class="project-header">
+                        <h3>Absence Checker</h3>
+                        <span class="project-date">Avril 2024</span>
+                    </div>
+                    <p class="project-description">
+                        Application web conçue pour gérer les absences en classe. Elle permet de mettre à 
+                        jour facilement les listes des élèves présents et absents avec une interface intuitive.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Web App</span>
+                        <span class="tag">Gestion</span>
+                        <span class="tag">Interface Utilisateur</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-status">✅ Terminé</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Formation</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge current">En cours</div>
+                        <h3>Diplôme Universitaire de Technologie (DUT)</h3>
+                        <p class="timeline-institution">Higher School of Technology Essaouira, Morocco</p>
+                        <p class="timeline-date">Septembre 2023 - Juin 2025</p>
+                        <p class="timeline-description">
+                            Formation en développement informatique avec une spécialisation en technologies 
+                            web et bases de données. Acquisition de compétences en programmation, gestion 
+                            de projets et développement d'applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge completed">Obtenu</div>
+                        <h3>Baccalauréat</h3>
+                        <p class="timeline-institution">Tarik Ibn Ziad, Casablanca, Morocco</p>
+                        <p class="timeline-date">Septembre 2021 - Juin 2022</p>
+                        <p class="timeline-description">
+                            Diplôme de fin d'études secondaires avec une orientation vers les sciences et 
+                            les technologies de l'information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-moi</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Restons en contact</h3>
+                    <p>
+                        Je suis toujours ouvert aux opportunités et collaborations. 
+                        N'hésitez pas à me contacter pour discuter de vos projets ou simplement pour échanger.
+                    </p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <span class="contact-icon">📧</span>
+                            <div class="contact-details">
+                                <strong>Email</strong>
+                                <a href="mailto:achtoutmohamed08@gmail.com">achtoutmohamed08@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <span class="contact-icon">📱</span>
+                            <div class="contact-details">
+                                <strong>Téléphone</strong>
+                                <a href="tel:+212664267126">+212 664 267 126</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <span class="contact-icon">📍</span>
+                            <div class="contact-details">
+                                <strong>Adresse</strong>
+                                <p>OP Essalam 1 GH 01 IMM 02<br>Casablanca, Morocco</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Votre nom</label>
+                            <input type="text" id="name" name="name" required placeholder="Ex: Jean Dupont">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Votre email</label>
+                            <input type="email" id="email" name="email" required placeholder="Ex: jean@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Ex: Opportunité de collaboration">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Écrivez votre message ici..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">↑</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Mohamed Achtout. Fait avec ❤️ et beaucoup de café ☕</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
